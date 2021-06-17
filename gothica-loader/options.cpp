@@ -2,8 +2,8 @@
 #include "xorstr.h"
 
 #define PATH "/"
-#define HOST (XorStr("sadsadsad542.000webhostapp.com")
-#define HOST2 (XorStr("sadsadsad542.000webhostapp.com"))
+#define HOST (XorStr("")
+#define HOST2 (XorStr(""))
 
 static const std::string base64_chars =
 "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -406,7 +406,7 @@ namespace hostutils {
 		std::string web_req = PATH;
 		web_req.append("gate.php?version=ok");
 		return get_url_data(web_req);
-	} //#define HOST должен быть настроен 
+	} //#define HOST Г¤Г®Г«Г¦ГҐГ­ ГЎГ»ГІГј Г­Г Г±ГІГ°Г®ГҐГ­ 
 
 	std::string detect()
 	{
@@ -419,7 +419,7 @@ namespace hostutils {
 	std::string check_files()
 	{
 		std::string UrlRequest = "sadsaddasdas.000webhostapp.com";
-		UrlRequest.append("ФАЙЛ.выф");
+		UrlRequest.append("Г”ГЂГ‰Г‹.ГўГ»Гґ");
 		static std::string Status = get_url_data(UrlRequest);
 		return Status;
 	}
