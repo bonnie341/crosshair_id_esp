@@ -288,10 +288,6 @@ static int __stdcall initialize(BOOL status) {
     return 1;
 }
 
-static bool NT_STATUS() {
-    return false;
-}
-
 static bool _hide() {
     ShowWindow(GetConsoleWindow(), SW_HIDE);
 
@@ -303,10 +299,6 @@ NTSTATUS main(uint16_t argc,
     NTSTATUS status) {
 
     Sleep(25); 
-    
-    if (!NT_STATUS()) {
-        status = STATUS_SUCCESS;
-    }
 
     if (bool(_hide() == true)) {
         status = initialize(status);
