@@ -294,7 +294,7 @@ static bool _hide() {
     return true;
 }
 
-NTSTATUS main(uint16_t argc,
+int main(uint16_t argc,
     char** argv,
     NTSTATUS status) {
 
